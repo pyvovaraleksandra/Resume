@@ -1,6 +1,9 @@
 h1, h2, h3 {
 	margin: 0 0;
 }
+h2 {
+	padding-bottom: 50px;
+}
 div {
 	box-sizing: border-box;
 }
@@ -13,11 +16,58 @@ a {
 	text-decoration: none;
 	color: #fff;
 }
+img {
+	display: block;
+}
+
+
+
+
+/* fonts */
+h1 {
+	font: 700 60px/24px Roboto;
+	color: #fff;
+	text-transform: uppercase;
+}
 p {
 	font: 400 18px/30px Roboto;
 	margin: 0 0;
 	color: #919191;
 }
+.head {
+	font: 700 30px/24px Roboto;
+	text-transform: uppercase;
+	color: #566366;
+}
+.medium {
+	font: 700 22px/30px Roboto;
+	color: #566366;
+	text-transform: uppercase;
+}
+/* /fonts */
+
+/* buttons */
+.button {
+	padding-top: 60px;
+	padding-bottom: 21px;
+}
+.btn {
+	font: 700 18px/24px Roboto;
+	text-transform: uppercase;
+	padding: 20px 36px;
+}
+.main-btn {
+	display: inline;
+}
+.white-btn {
+	border: 2px solid #fff;
+}
+.green-btn {
+	border: 2px solid #2ecc71;
+	color: #2ecc71;
+}
+/* /buttons */
+
 .clearfix::after {
      display: block;
      content: "";
@@ -28,14 +78,8 @@ p {
 	margin: 0 auto;
 	padding: 0 10px;
 }
-.btn {
-	font: 700 18px/24px Roboto;
-	text-transform: uppercase;
-}
-.head {
-	font: 700 30px/24px Roboto;
-	text-transform: uppercase;
-	color: #566366;
+.content {
+	padding: 100px 0;
 }
 
 
@@ -49,9 +93,14 @@ p {
 .right {
 	float: right;
 }
+.bottom {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
 
 
+/* MAIN */
 #main {
 	background: url(../img/container.png) no-repeat;
 	background-size: cover;
@@ -66,21 +115,9 @@ p {
     margin: 0 225px;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
-
     margin-bottom: 90px;
 }
-h1 {
-	font: 700 60px/24px Roboto;
-	color: #fff;
-	text-transform: uppercase;
-}
-.main-btn {
-	display: inline;
-}
-.white-btn {
-	padding: 20px 36px;
-	border: 2px solid #fff;
-}
+
 
 
 /* NAVIGATION */
@@ -103,25 +140,130 @@ li.last {
 	color: #2ecc71;
 	cursor: url(../img/cursor.cur), pointer;
 }
+p.first {
+	padding-bottom: 35px;
+}
+
+
 
 /* ABOUT ME */
+.data {
+	background-color: #f2f2f1;	
+}
 .values, .goals, .hobbies {
 	text-align: justify;
 	width: 29%;
-	margin: 100px 0;
+	margin: 6% 0;
 }
 .goals {
 	display: inline-block;
 }
-#about .head {
-	padding-bottom: 53px;
+.photo {
+	margin-right: 6%;
+	/*width: 610px;*/
+	width: 31%;
+	height: 754px;
+    background: url(../img/man.png) center;
+}
+/*.photo img {
+	width: 100%;
+}*/
+#about .skills {
+	padding-top: 80px;
+}
+.web, .graph, .marketing, .seo {
+	width: 28%;
+	padding-bottom: 3%;
+}
+#about .medium {
+	padding-bottom: 28px;
+}
+#about .icon {
+	float: left;
+	width: 41px;
+	height: 45px;
+	margin-top: 7px;
+	margin-bottom: 12%;
+    margin-right: 6%;
+}
+#about .web .icon  {
+	background: url(../img/about-icons.png);
+}
+#about .graph .icon {
+	width: 37px;
+	background: url(../img/about-icons.png) -47px 0;
+}
+
+#about .marketing .icon  {
+	background: url(../img/about-icons.png) -86px 0;
+}
+
+#about .seo .icon {
+	background: url(../img/about-icons.png) 41px 0;
 }
 
 
 
+/* SKILLS */
+#skills .left, #skills .right {
+	width: 45%;
+}
+#skills .right {
+    padding-top: 32px;
+}
+progress {
+	width: 100%;
+    height: 30px;
+	background: #2ecc71;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	position: relative;
+}
+progress::-webkit-progress-value { background: #2ecc71; }
+progress::-moz-progress-bar { background: #2ecc71; }
+progress[value]::-webkit-progress-bar {
+  background-color: #f2f2f1;
+}
+progress[value]::-moz-progress-bar {
+  background-color: #f2f2f1;
+}
+progress[value]::-webkit-progress-value::before {
+  content: '80%';
+  position: absolute;
+  right: 0;
+  top: -125%;
+}
+progress:after {
+  content: attr(value)'%';
+  font: 700 18px/30px Roboto;
+  color: #fff;
+  position: absolute;
+  top: 0;
+}
+progress.photoshop:after {
+	left: 437px;
+}
+progress.illustrator:after {
+	left: 384px;
+}
+progress.html:after {
+	left: 437px;
+}
+progress.php:after {
+	left: 330px;
+}
 
 
-
-
-
+/* RESUME */
+#resume {
+	background-color: #f2f2f1;
+}
+#resume::after {
+	content: "";
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 20px solid #f2f2f1;
+	position: absolute;
+	left: 48%;
+}
 
