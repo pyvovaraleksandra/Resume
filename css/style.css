@@ -1,0 +1,127 @@
+h1, h2, h3 {
+	margin: 0 0;
+}
+div {
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+p {
+	font: 400 18px/30px Roboto;
+	margin: 0 0;
+	color: #919191;
+}
+.clearfix::after {
+     display: block;
+     content: "";
+     clear: both;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.btn {
+	font: 700 18px/24px Roboto;
+	text-transform: uppercase;
+}
+.head {
+	font: 700 30px/24px Roboto;
+	text-transform: uppercase;
+	color: #566366;
+}
+
+
+
+.text-center {
+	text-align: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+
+
+#main {
+	background: url(../img/container.png) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.main-content {
+	position: absolute;
+	top: 56%;
+}
+.headline {
+	padding: 30px 0;
+    margin: 0 225px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+    margin-bottom: 90px;
+}
+h1 {
+	font: 700 60px/24px Roboto;
+	color: #fff;
+	text-transform: uppercase;
+}
+.main-btn {
+	display: inline;
+}
+.white-btn {
+	padding: 20px 36px;
+	border: 2px solid #fff;
+}
+
+
+/* NAVIGATION */
+#nav {
+	background-color: #252e30;
+}
+.menu {
+	padding-top: 9px;
+}
+.menu li {
+	font: 700 16px/30px Roboto;
+	text-transform: uppercase;
+	float: left;
+	margin: 0 20px;
+}
+li.last {
+	margin-right: 0;
+}
+.menu li:hover > a {
+	color: #2ecc71;
+	cursor: url(../img/cursor.cur), pointer;
+}
+
+/* ABOUT ME */
+.values, .goals, .hobbies {
+	text-align: justify;
+	width: 29%;
+	margin: 100px 0;
+}
+.goals {
+	display: inline-block;
+}
+#about .head {
+	padding-bottom: 53px;
+}
+
+
+
+
+
+
+
+
+
