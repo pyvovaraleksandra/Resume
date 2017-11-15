@@ -452,15 +452,17 @@ footer {
 	border-radius: 34px;
 	background-color: #4b5456;
 }
+.socia a {
+	display: inline-block;
+}
 .socia i {
-	margin: 8px;
+	padding: 8px;
     font-size: 19px;
     color: #191f21;
 }
 .socia li:hover i {
-	color: #fff;
 	cursor: url(../img/cursor.cur), pointer;
+	color: #fff;
 }
-
 
 
