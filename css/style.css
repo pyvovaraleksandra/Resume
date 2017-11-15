@@ -125,6 +125,9 @@ p {
 
 
 /* NAVIGATION */
+.logo img:hover {
+	cursor: url(../img/cursor.cur), pointer;
+}
 #nav {
 	background-color: #252e30;
 }
