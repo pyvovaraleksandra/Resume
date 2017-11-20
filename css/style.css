@@ -125,7 +125,8 @@ p {
 
 
 /* NAVIGATION */
-.logo img:hover {
+.logo a {
+	display: block;
 	cursor: url(../img/cursor.cur), pointer;
 }
 #nav {
