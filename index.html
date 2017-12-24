@@ -6,9 +6,13 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<script src="https://use.fontawesome.com/c015006049.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+
+
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav">
+
 	<div id="main" class="text-center">
 		<div class="wrapper">
 			<div class="main-content">
@@ -21,24 +25,25 @@
 			</div>
 		</div>
 	</div>
-	<div id="nav">
-		<div class="wrapper clearfix">
-			<div class="logo left">
-				<a href="#"><img src="img/logo.png" alt="logo"></a>
-			</div>
-			<div class="menu right">
-				<ul class="clearfix">
-					<li><a href="#main">Home</a></li>
-					<li><a href="#about">about me</a></li>
-					<li><a href="#skills">skills</a></li>
-					<li><a href="#resume">resume</a></li>
-					<li><a href="#testimonials">testimonials</a></li>
-					<li><a href="#portfolio">portfolio</a></li>
-					<li class="last"><a href="#contact">contact me</a></li>
-				</ul>
-			</div>
+
+	<nav id="nav" class="navbar navbar-default navbar-static">
+		<div class="logo left">
+			<a href="#"><img src="img/logo.png" alt="logo"></a>
 		</div>
-	</div>
+		<div class="collapse navbar-collapse navbar-scrollspy menu right">
+			<ul class="nav navbar-nav">
+				<li><a href="#main">Home</a></li>
+				<li><a href="#about">about me</a></li>
+				<li><a href="#skills">skills</a></li>
+				<li><a href="#resume">resume</a></li>
+				<li><a href="#testimonials">testimonials</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li class="last"><a href="#contact">contact me</a></li> 
+			</ul>
+		</div>
+	</nav>
+
+
 	<div id="about">
 		<div class="wrapper">
 			<div class="clearfix text-center">
@@ -352,5 +357,11 @@
 			</div>
 		</div>
 	</footer>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

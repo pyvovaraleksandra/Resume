@@ -66,9 +66,9 @@ p {
 /* /buttons */
 
 .clearfix::after {
-     display: block;
-     content: "";
-     clear: both;
+    display: block;
+    content: "";
+    clear: both;
 }
 .wrapper {
 	width: 1200px;
@@ -139,7 +139,8 @@ p {
 	font: 700 16px/30px Roboto;
 	text-transform: uppercase;
 	float: left;
-	margin: 0 20px;
+	/*margin: 0 20px;*/
+	margin: 0 10px;
 }
 li.last {
 	margin-right: 0;
@@ -363,7 +364,7 @@ cite {
 }
 #portfolio li:hover a {
 	cursor: url(../img/cursor.cur), pointer;
-	background: #2ecc71;;
+	background: #2ecc71;
 }
 #portfolio li:hover img {
 	opacity: 0.3;
@@ -469,4 +470,18 @@ footer {
 	color: #fff;
 }
 
-
+/* just for bootstrap */
+#nav {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    border: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #2ecc71;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
